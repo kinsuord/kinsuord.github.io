@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body{
+	font-size: 18px;
+	font-family: 'cwtexyen', sans-serif;
+}
+.nav-bar-left{
+	float:left;
+}
