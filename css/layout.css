@@ -1,9 +1,44 @@
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 body{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 	font-size: 18px;
 	font-family: 'cwtexyen', sans-serif;
 }
-.nav-bar-left{
+.navleft{
+	background-color:#7aceff;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	width: 20%;
+	float:left;
+}
+.container{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding-left: 30px;
+	padding-top: 30px;
+	width: 80%;
+	background-color:#ff7985;
+	float:left;
+}
+.content{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+.col-4{
+	width: 33%;
+	float:left;
+}
+.col-8{
+	width: 66%;
 	float:left;
 }
