@@ -8,7 +8,7 @@ body{
 	font-size: 18px;
 	font-family: 'cwtexyen', sans-serif;
 }
-img{
+#self img{
 	border: 2px solid rgba(0,0,0,0.23);
 	-webkit-box-shadow: 10px 7px 5px rgba(0,0,0,0.33);
 	-moz-box-shadow: 10px 7px 5px rgba(0,0,0,0.33);
@@ -88,6 +88,15 @@ footer{
 .pd-b{
 	padding-bottom: 20px;
 }
+.image-row img{
+	margin-left: 3px;
+	margin-bottom: 3px;
+	float: left;
+	height: 200px;
+}
+.image-row{
+	/* overflow: auto; */
+}
 /* color */
 .bg-orange{
 	background-color: #ffe4b2
@@ -111,4 +120,12 @@ ul{
 footer p{
 	font-size: 12px;
 	color: #bfbfbf;
+}
+th, td {
+   border: 2px solid #bfbfbf;
+   text-align: center;
+}
+table {
+    border-collapse: collapse;
+	width: 70%;
 }
