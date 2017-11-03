@@ -3,38 +3,50 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Profile</title>
+		<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
 		<link href="./css/layout.css" rel="stylesheet" type="text/css"/>
 	</head>
 	
 	<body>
-		<div class = "navleft">
-			<ul>
-			  <li><a>nav1</a></li>
-				<li><a>nav2</a></li>
-				<li><a>nav3</a></li>
-			</ul>
-		</div>
-		<div class = "container">
-		<div id = "self" class = "content">
-		<h2>自我介紹</h2>
-			<div class = "content col-4">
-				<img></img>
+		<div class = "container bg-orange">
+			<div class = "navleft ">
+				<ul>
+					<li><a href = "#self"><i class="fa fa-address-card"></i> 簡介</a></li>
+					<li><a href = "#record"><i class="fa fa-trophy"></i> 紀錄</a></li>
+					<li><a href = "#album"><i class="fa fa-camera-retro"></i> 相簿</a></li>
+					<li><a href = "#article"><i class="fa fa-file"></i> 文章</a></li> 
+				</ul>
 			</div>
-			<div class = "content col-8">
+			<div class = "content bg-blue">
+				<section id = "self">
+				<h2>簡介</h2>
+					<div class = "col-4 pd-l">
+						<img src = "./source/self_image.jpg"></img>
+					</div>
+					<div class = "col-8 pd-l pd-b">
+						<h3>梁景勛</h3>
+						<p>我來自台南安平，目前就讀讀清華大學電資院學士班</p>
+						<p></p>
+					</div>			
+				</section>
+						
+				<section id = "record">
+					<h2>紀錄</h2>
+				</section>
 				
-			</div>			
-		</div>
 				
-		<div id = "record" class = "content">
-			<h2>紀錄</h2>
-		</div>
-		
-		
-		<div id = "album" class = "content">
-			<h2>相簿</h2>
-		</div>
+				<section id = "album">
+					<h2>相簿</h2>
+					<p>因為我找不太到照片，所以就曬個貓咪圖吧，雖然我沒有養就是了_(:3 」∠ )_</p>
+				</section>
+				<section id = "article">
+					<h2>文章</h2>
+					<p>目前沒有文章</p>
+				</section>
+			</div>
 		</div>
 		<footer>
+			<p>jorden2936228@yahoo.com.tw  <span class = "font-size-m">梁景勛</span></p>
 		</footer>
 	</body>
 </html>
