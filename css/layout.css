@@ -104,7 +104,19 @@ footer{
 .bg-blue{
 	background-color: #cefffd;	
 }
-/* font */
+/* style */
+.fblink{
+	text-decoration:none;
+	background-color: #3b5998;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left : 20px;
+	text-align: center;
+	border-radius: 8px;
+	color: #ffffff;
+}
 ul{
 	list-style-type: none;
 }
