@@ -1,79 +1,101 @@
 <!DOCTYPE html>
-<!-- 有點趕時間，內容就讓我惡搞一下吧 -->
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Profile</title>
-		<link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
-		<link href="./css/layout.css" rel="stylesheet" type="text/css"/>
-	</head>
-	
-	<body>
-		<div class = "container bg-orange">
-			<div class = "navleft ">
-				<ul>
-					<li><a href = "#self"><i class="fa fa-address-card"></i> 簡介</a></li>
-					<li><a href = "#record"><i class="fa fa-trophy"></i> 紀錄</a></li>
-					<li><a href = "#album"><i class="fa fa-camera-retro"></i> 相簿</a></li>
-					<li><a href = "#article"><i class="fa fa-file"></i> 文章</a></li> 
-				</ul>
-			</div>
-			<div class = "content bg-blue">
-			
-				<section id = "self">
-				<h2>簡介</h2>
-					<div class = "col-4 pd-l">
-						<img src = "./source/self_image.jpg"></img>
-					</div>
-					<div class = "col-8 pd-l pd-b">
-						<h3>梁景勛</h3>
-						<p>我來自台南安平，目前就讀清華大學電資院學士班</p>
-						<p>興趣是打桌球、打遊戲、打code(?)<a class = "fblink" href = "https://www.facebook.com/profile.php?id=100000351175954">我的FB</a></p>
-					</div>		
-				</section>
-						
-				<section id = "record">
-					<h2>紀錄</h2>
-					<table class = "pd-l pd-t ">
-						<tr>
-							<th>獎項</th>
-							<th>名次</th>
-						</tr>
-						<tr>
-							<td>幼稚園洗手比賽</td>
-							<td>第五名</td>
-						</tr>
-						<tr>
-							<td>幼稚園畫畫比賽(這是真的)</td>
-							<td>佳作</td>
-						</tr>
-					</table>
-				</section>				
-				
-				<section id = "album">
-					<h2>相簿</h2>
-					<p>因為我找不太到照片，所以就曬個貓咪圖吧，雖然我沒有養就是了_(:3 」∠ )_</p>
-					<div class = "image-row">
-						<img src = "./source/cat1.jpg"></img>
-						<img src = "./source/cat2.jpg"></img>
-						<img src = "./source/cat3.jpg"></img>
-					</div>
-					<div class = "image-row">
-						<img src = "./source/cat4.jpg"></img>
-						<img src = "./source/cat5.jpg"></img>
-						<img src = "./source/cat6.jpg"></img>						
-					</div>
-					</section>
+<head>
+	<title>Todo List</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script type="text/javascript" src="js/todo.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</head>
+<body onload="loadPage()">
+	<div class="container">
+		<h1 class="text-center text-uppercase">Easy Easy Todo List</h1>
+		<p class="text-center">by Liang</p>
+		<!-- /.row -->
 
-				<section id = "article">
-					<h2>文章</h2>
-					<p>目前沒有文章</p>
-				</section>
+		<hr>
+
+		<div class="row">
+			<div class="col-lg-3">
+				<form>
+					<div class="form-group">
+    					<label>Content</label>
+						<input type="text" name="content" class="form-control">
+					</div>
+					<div class="form-group">
+    					<label>Due Date</label>
+						<input type="date" name="due" class="form-control">
+					</div>
+					<div class="form-group">
+						<a href="#" class="btn btn-primary btn-block" onclick = "addTodo()" >Add Todo</a>
+					</div>
+				</form>
+			</div>
+			<!-- /.col-lg-3 -->
+
+			<div class="col-lg-9">
+				<table class="table" id="todo-list-table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Content</th>
+							<th>Due Date</th>
+							<th>Operation</th>
+						</tr>
+					</thead>
+					<!-- /thead -->
+					<tbody>
+						<!-- TODO: Get the todo items and show them here.
+							 If there are no todo content, use colspan and show "Todo List Is Empty" -->
+						<!-- <tr> -->
+							<!-- <td>1</td> -->
+							<!-- <td>Test Content</td> -->
+							<!-- <td>2018/1/1</td> -->
+							<!-- <td> -->
+								<!-- <a href="#" class="btn btn-sm btn-outline-primary">Edit</a> -->
+								<!-- <a href="#" class="btn btn-sm btn-outline-success">Finish</a> -->
+							<!-- </td> -->
+						<!-- </tr> -->
+						<tr>
+							<td colspan="4" class="text-center" ID="empty-message">Todo List Is Empty</td>
+						</tr>
+					</tbody>
+					<!-- /tbody -->
+				</table>
+			</div>
+			<!-- /.col-lg-9 -->
+		</div>
+		<!-- /.row -->
+		<!-- #editModal -->
+	  <!-- Modal -->
+		<div class="modal fade" id="editModal" role="dialog">
+			<div class="modal-dialog">
+			
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Edit list</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<label>Content</label>
+						<input id="content-input" type="text" name="content" class="form-control">
+						<label>Due Date</label>
+						<input id="due-input" type="date" name="due" class="form-control">
+						<input id="id-input" type="hidden">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal" onclick="editTodo()">Comfirm</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+				
 			</div>
 		</div>
-		
-		<footer>
-			<p>jorden2936228@yahoo.com.tw  <span class = "font-size-m">梁景勛</span></p>
-		</footer>
-	</body>
+		<!-- /#editModal -->
+	</div>
+	<!-- /.container -->
+</body>
 </html>
