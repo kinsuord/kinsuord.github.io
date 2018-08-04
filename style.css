@@ -1,0 +1,50 @@
+#wapper{
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    background-color: rgba(255,255,255,0.8);
+    border: 1rem solid white;
+}
+@media screen and (max-width:70rem){
+    #wapper{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    background-image: url("src/mountains.jpg");
+    background-attachment: fixed; 
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+header{
+    font-family: 'Flavors', cursive;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-shadow: 0.2rem 0.2rem lightgray;
+    text-align: center;
+}
+h2{
+    font-weight: bold;
+}
+blockquote{
+    border-left: 0.3rem solid lightgray;
+    padding-left: 0.5rem;
+}
+.date{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: lightskyblue;
+    letter-spacing: 0.2rem;
+}
+footer{
+    text-shadow: 0.1rem 0.1rem black;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 3rem;
+    padding-bottom:1rem; 
+    color: lightgray;
+}
